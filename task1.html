@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style></style>
+        <script>
+            function showpromt () {
+            let a = Number(prompt("Enter first operand"));             
+             let b = Number(prompt("Enter Second Operand"));
+             let c = prompt("Enter Operator +,-,*,/");
+             var res = 0 ;
+
+            if (isNaN(a) || isNaN(b)) {
+                alert("Enter numbers only");
+                return false;
+            } 
+             
+             if(c =="+") {
+                res= a+b;
+             } else if (c =="-") {
+                res= a-b;                
+             } else if (c =="*") {
+                res= a*b;                
+             } 
+             else if (c =="/") {
+                res= a/b;                
+             } else if (c =="%") {
+                res= a%b;                
+             }
+             rest = a + c + b +"="+ res;
+             alert(rest); 
+             } 
+        </script>
+    </head>
+    <body>
+      <button onclick="showpromt()">Click Here</button>
+      <div id="show"></div>
+    </body>
+</html>
