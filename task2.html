@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+        function showconfirm() {
+            let a = confirm("Are you male?");
+            if (a == true) {
+                document.getElementById('txt').innerHTML = "Male";               
+            } else {
+                document.getElementById('txt').innerHTML = "Female";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <input type="checkbox" name="gender" id="gender" onclick="showconfirm()" />
+        <label for="gender"  id="txt">Gender</label>
+    </div>
+</body>
+</html>
